@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-white shadow fixed w-full top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 py-2 flex justify-between items-center">
+    <!-- Logo with text -->
+    <a href="#home" class="flex items-center space-x-2 cursor-default">
+      <img src="assets/Rlogo.png" alt="Logo" class="h-20 w-20 object-contain" />
+      <span class="text-xl font-bold text-blue-600">Rakesh Kumar</span>
+    </a>
+
+    <!-- Navigation Menu -->
+    <nav class="space-x-4 text-sm sm:text-base font-semibold">
+      <a href="#home" class="hover:text-blue-500">Home</a>
+      <a href="#services" class="hover:text-blue-500">Services</a>
+      <a href="#contact" class="hover:text-blue-500">Contact</a>
+    </nav>
+  </div>
+</header>
+
+  <main class="pt-20" id="home">
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-50 to-white py-12 px-4">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col-reverse md:flex-row items-center">
+        <div class="md:w-1/2 text-center md:text-left">
+          <h2 class="text-4xl font-bold text-gray-800 mb-4">
+            Hi, I'm <span class="text-blue-500">Rakesh Kumar</span>
+          </h2>
+          <p class="text-lg mb-6">A passionate Web Developer & Designer.</p>
+           <!-- CTA Button -->
+
+      <a href="#contact" class="inline-block bg-blue-600 text-white px-4 py-2 rounded-lg text-lg font-medium hover:bg-blue-700 transition">
+        Contact Me
+      </a>
+    </div>
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <img src="assets/background.jpg" alt="hero" class="rounded shadow-lg mx-auto transition-transform duration-500 hover:scale-105" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="scroll-mt-24 pt-24">
+      <div class="max-w-6xl mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-10">Services</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+            <h4 class="text-xl font-semibold mb-2">Web Design</h4>
+            <p>Creating user-friendly and appealing layouts.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+            <h4 class="text-xl font-semibold mb-2">Frontend Development</h4>
+            <p>Building responsive and interactive websites.</p>
+          </div>
+          <div class="bg-white p-6 rounded-lg shadow hover:shadow-lg">
+            <h4 class="text-xl font-semibold mb-2">SEO Optimization</h4>
+            <p>Ensuring your site ranks better on search engines.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section class="py-20 bg-white">
+      <div class="max-w-6xl mx-auto px-4 flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-8 md:mb-0">
+          <img src="assets/rk20kb.jpg" alt="About" class="w-full max-w-[240px] rounded-md shadow mx-auto" />
+        </div>
+        <div class="md:w-1/2 md:pl-12">
+          <h3 class="text-3xl font-bold mb-4">About Me</h3>
+          <p>I’m a dedicated web developer focusing on building clean, responsive web experiences with HTML, CSS, JavaScript, and Tailwind. I love turning ideas into visually appealing and functional websites.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="scroll-mt-24 pt-24">
+      <div class="max-w-2xl mx-auto px-4">
+        <h3 class="text-3xl font-bold text-center mb-8">Contact Me</h3>
+        <form class="bg-white p-6 rounded-lg shadow space-y-4">
+          <input type="text" placeholder="Name" class="w-full border px-4 py-2 rounded" />
+          <input type="email" placeholder="Email" class="w-full border px-4 py-2 rounded" />
+          <textarea placeholder="Message" class="w-full border px-4 py-2 rounded" rows="4"></textarea>
+          <button class="bg-blue-600 text-white px-6 py-2 rounded hover:bg-blue-700">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white py-6 mt-10 shadow-inner text-center text-sm text-gray-500">
+    <p>Designed by Rakesh Kumar| <a href="https://www.linkedin.com/in/rakesh-kumar"
+    class="hover:underline">Linkedin</a></p>
+    <div class="mt-2">
+      <a href="#" class="hover:text-blue-600 mx-2">GitHub</a>
+      <p>© 2025 Rakesh Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
